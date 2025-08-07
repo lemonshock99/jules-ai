@@ -10,3 +10,4 @@ services = [
   "iam.googleapis.com",
   "sqladmin.googleapis.com"
 ]
+gcp_auth_file = "path/to/your/service-account-key.json"
