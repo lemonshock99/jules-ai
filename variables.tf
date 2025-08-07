@@ -38,3 +38,8 @@ variable "services" {
     "storage.googleapis.com"
   ]
 }
+
+variable "gcp_auth_file" {
+  description = "The path to the GCP service account key file."
+  type        = string
+}

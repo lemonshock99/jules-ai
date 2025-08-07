@@ -12,7 +12,21 @@ This Terraform script creates a new Google Cloud Platform (GCP) project and enab
 
 ## Configuration
 
-1.  **Clone the repository:**
+1.  **Create a Service Account:**
+
+    - Go to the [Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts) page in the GCP Console.
+    - Select your project.
+    - Click **Create service account**.
+    - Enter a name and description for the service account.
+    - Grant the following roles to the service account:
+        - `Project Creator`
+        - `Billing Account User`
+    - Click **Done**.
+    - Click the three dots in the **Actions** column for the service account you just created and select **Manage keys**.
+    - Click **Add Key** and then **Create new key**.
+    - Select **JSON** as the key type and click **Create**. A JSON key file will be downloaded to your computer.
+
+2.  **Clone the repository:**
 
     ```bash
     git clone <repository-url>
@@ -27,7 +41,7 @@ This Terraform script creates a new Google Cloud Platform (GCP) project and enab
     cp terraform.tfvars.example terraform.tfvars
     ```
 
-    Update the `terraform.tfvars` file with your specific values for `project_id`, `project_name`, `billing_account`, and `org_id`. You can also customize the list of `services` to be enabled.
+    Update the `terraform.tfvars` file with your specific values for `project_id`, `project_name`, `billing_account`, `org_id`, and `gcp_auth_file`. You can also customize the list of `services` to be enabled.
 
 ## Usage
 
