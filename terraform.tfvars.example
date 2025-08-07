@@ -1,0 +1,12 @@
+project_id      = "your-gcp-project-id"
+project_name    = "your-gcp-project-name"
+billing_account = "your-billing-account-id"
+org_id          = "your-organization-id"
+region          = "us-central1"
+zone            = "us-central1-c"
+services = [
+  "compute.googleapis.com",
+  "storage.googleapis.com",
+  "iam.googleapis.com",
+  "sqladmin.googleapis.com"
+]
