@@ -41,7 +41,7 @@ This Terraform script creates a new Google Cloud Platform (GCP) project and enab
     cp terraform.tfvars.example terraform.tfvars
     ```
 
-    Update the `terraform.tfvars` file with your specific values for `project_id`, `project_name`, `billing_account`, `org_id`, and `gcp_auth_file`. You can also customize the list of `services` to be enabled.
+    Update the `terraform.tfvars` file with your specific values for `project_id`, `project_name`, `billing_account`, `org_id` (or `folder_id`), and `gcp_auth_file`. You can also customize the list of `services` to be enabled.
 
 ## Usage
 

@@ -2,6 +2,7 @@ project_id      = "your-gcp-project-id"
 project_name    = "your-gcp-project-name"
 billing_account = "your-billing-account-id"
 org_id          = "your-organization-id"
+folder_id       = "your-folder-id"
 region          = "us-central1"
 zone            = "us-central1-c"
 services = [

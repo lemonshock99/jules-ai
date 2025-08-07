@@ -16,6 +16,13 @@ variable "billing_account" {
 variable "org_id" {
   description = "The organization ID."
   type        = string
+  default     = null
+}
+
+variable "folder_id" {
+  description = "The folder ID."
+  type        = string
+  default     = null
 }
 
 variable "region" {
